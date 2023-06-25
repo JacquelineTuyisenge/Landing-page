@@ -1,1 +1,48 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleure</title>
+    <link rel="stylesheet" href="my-page.css">
+</head>
+<body>
+    <header class="header">
+        <img src="data:image/png;base64,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" alt="Logo" class="logo">
+         <h1>This website is awesome</h1>
+         <p>we will see diferent kind of flowers as we know they are used in many occasions</p>
+         <button class="my-button">sign up</button>
+         <div class="welcome">
+            <img src="https://shorturl.at/rBFJV" alt="flower">
+         </div>
+    </header>
+    <section class="photos">
+        <h1>Four Favorite Flowers</h1>
+        <div class="one">
+            <img src="https://images.unsplash.com/photo-1504512925757-05a29947cfdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsdWUlMjBmbG93ZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60" alt="Blue">
+        </div>
+        <div class="two">
+            <img src="https://media.istockphoto.com/id/1187172230/photo/green-chrysanthemums-close-up.jpg?s=612x612&w=is&k=20&c=kjPgFgj_LH-3njeIIOwuIwh0s_CeahC-6xSfnOfP1X8=" alt="green">
+        </div>
+        <div class="three">
+            <img src="https://media.istockphoto.com/id/511112100/photo/tulips.jpg?s=612x612&w=0&k=20&c=BIdlCAFoXLqYIIeFpJJ8Pmbw6_68vOPGEfLr8tInMhM=" alt="pink">
+        </div>
+        <div class="four">
+            <img src="https://media.istockphoto.com/id/1091007944/photo/flower-rose-petal-blossom-red-nature-beautiful-background.jpg?s=612x612&w=0&k=20&c=yyM7UVayFPAF-0PfNJ3TWCLB-M7CJllCbyEGwo6HK24=" alt="red">
+        </div>
+    </section>
+    <section class="hello">
+            <p>Flowers are the music of the ground. From earth's lips, spoken without sound</p>
+            <dev class="author">- Edwin Curran</dev>
+    </section>
+    <section class="section">
+        <div class="call">
+            <h1>call to action! it's time!</h1>
+            <p>sign up for our product by clicking  button doun here</p>
+            <button class="button">sign up</button>
+    </section>
+    <footer class="footer">
+        <p>copyright @ The Odin project&copy; 2021</p>
+    </footer>
+</body>
+</html>
